@@ -13,12 +13,12 @@ export default function Link(props) {
     (e) => {
       e.preventDefault();
       if (props.replace) {
-        navigationValue.navigator.replace(props.to);
+        navigationValue.navigator.replace(href);
       } else {
-        navigationValue.navigator.push(props.to);
+        navigationValue.navigator.push(href);
       }
     },
-    [navigationValue, props.to, props.replace]
+    [navigationValue, props.replace, href]
   );
 
   return (

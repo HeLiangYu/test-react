@@ -41,20 +41,6 @@ export default function RouterDemo() {
     <div>
       <div style={{ marginBottom: 30 }}>
         <BrowserRouter>
-          {useRoutes([
-            {
-              path: "/",
-              element: <div>1</div>,
-              children: [
-                {
-                  path: "messages",
-                  element: <div>21</div>,
-                },
-                { path: "tasks", element: <div>3</div> },
-              ],
-            },
-            { path: "team", element: <div>4</div> },
-          ])}
           <div>
             <Link to="/page1">page1</Link>
             <Link to="/page2">page2</Link>
