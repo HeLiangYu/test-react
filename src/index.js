@@ -8,11 +8,14 @@ import ContextComp from "./pages/context";
 import FormComp from "./pages/form";
 import EffectComp from "./pages/hooks/useEffectPage";
 import Imperative from "./pages/hooks/ImperativeHandle";
-import RouterDemo from "./pages/router/demo";
+// import RouterDemo from "./pages/router/demo";
+import "./pages/redux/demo";
+import ScrollComp from "./pages/scroll";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterDemo />
+    {/* <RouterDemo /> */}
+    {/* <ScrollComp/> */}
   </React.StrictMode>
 );
